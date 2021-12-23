@@ -1,0 +1,42 @@
+Desafío semanal
+
+- Crear una carpeta llamada desafío 2.
+- Dentro de esta carpeta, crear otra carpeta llamada 'funciones'.
+- Crear un archivo dentro de esta carpeta y escribir todas las funciones dentro de este archivo.
+    1. Crear una función llamada primerosTres que reciba un array como argumento y retorna los primeros 3 elementos del array dentro de otro array.
+       Ejemplo:
+       let array1 = [34, 'hola', {nombre: 'Javier', edad: 25}, 'chau']
+       primerosTres(array1) --> [34, 'hola', {nombre: 'Javier', edad: 25}]
+       Si el array pasado como argumento tiene menos de 3 elementos debe retornar un mensaje de error.
+    2. Crear una función llamada crearObjeto que reciba cuatro argumentos (nombre, apellido, edad, profesión). Retornar un objeto con claves nombre, apellido, edad y profesión y los valores pasados como argumentos.
+       Ejemplo:
+       crearObjeto('Javier', 'Ardiles', 25, 'Programador') --> {nombre: 'Javier', apellido: 'Ardiles', edad: 25, profesion: 'Programador'}
+    3. Crear una función llamada obtenerLargo que reciba un array como argumento y que retorne su longitud.
+    4. Crear una función llamada obtenerCuadrados que reciba un array de números y retorne un array con el cuadrado de cada número. Sugerencia: usar método map de arrays.
+       Ejemplo:
+       let array4 = [3, 5, 23, 89, 100];
+       obtenerCuadrados(array4) --> [9, 25, 529, 7921, 10000]
+    5. Crear una función llamada agregarAlFinal que reciba un array y un elemento cualquiera como argumentos. La función debe agregar el elemento al final del array y retornar el array.
+       Ejemplo:
+       let array5 = [1, 2, 3, 4, 5];
+       let elemento = 'esto es un string';
+       agregarAlFinal(array5, elemento) --> [1, 2, 3, 4, 5, 'esto es un string']
+    6. Crear una función llamada preguntarSiContiene que reciba dos argumentos (un array de números y un número). La función debe retornar true o false dependiendo si el array contiene el número o no.
+    7. Crear una función llamada saludarEnIdioma que reciba un nombre y un idioma como argumentos. La función debe retornar un saludo en el idioma indicado. El idioma puede ser español, inglés, portugués o francés. Sugerencia, usar método switch.
+       Ejemplo:
+       saludarEnIdioma('Javier', 'español') --> 'Hola Javier, que tengas un lindo dia'
+       saludarEnIdioma('Javier', 'ingles') --> 'Hello Javier, have a nice day'
+       saludarEnIdioma('Javier', 'portugues') --> 'Oi Javier, tenha um bom dia'
+       saludarEnIdioma('Javier', 'español') --> 'Salut Javier, bonne journée'
+
+- Al final del archivo, exportar las 5 funciones de la siguiente manera:
+    module.exports = {
+        primerosTres,
+        crearObjeto,
+        obtenerLargo,
+        obtenerCuadrados,
+        agregarAlFinal,
+        preguntarSiContiene,
+        saludarEnIdioma,
+    }
+- Crear un archivo app.js afuera de la carpeta funciones e importar y ejecutar todas las funciones.
